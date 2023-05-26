@@ -40,20 +40,44 @@ class Usuario {
         this.fecha = fecha;
         this.url_callback = url_callback;
     }
-
-    public int getId() {
-        return id;
+    //Generamos los getters y setters
+    public int getIdDocname() {
+        return id_docname;
     }
-
-    public String getBookName() {
-        return bookName;
+    public String getDocname() {
+        return docname;
     }
-
-    public void setId(int id) {
-        this.id = id;
+    public String getDocumento() {
+        return documento;
     }
+    public int getIdMetaData() {
+        return id_metadata;
+    }
+    public int getIdListaEmail() {
+        return id_lista_email;
+    }
+    public String getFecha() { return fecha; }
+    public String getUrlCallback() { return url_callback; }
 
-    public void setBookName(String bookName) {
-        this.bookName = bookName;
+    public void setIdDocname(int id_docname) {
+        this.id_docname = id_docname;
+    }
+    public void setDocumento( String documento) {
+        this.documento = documento;
+    }
+    public void setDocname( String docname) {
+        this.docname = docname;
+    }
+    public void setIdMetaData(int id_metadata) {
+        this.id_metadata = id_metadata;
+    }
+    public void setIdListaEmail(int id_lista_email) {
+        this.id_lista_email = id_lista_email;
+    }
+    public void setFecha(String fecha) {
+        this.fecha = fecha;
+    }
+    public void setUrlCallback(String url_callback) {
+        this.url_callback = url_callback;
     }
 }
